@@ -12,8 +12,10 @@ export const surfacesCustomizations: Components<Theme> = {
       root: ({ theme }) => ({
         padding: 4,
         overflow: 'clip',
+        // @ts-ignore
         backgroundColor: (theme.vars || theme).palette.background.default,
         border: '1px solid',
+        // @ts-ignore
         borderColor: (theme.vars || theme).palette.divider,
         ':before': {
           backgroundColor: 'transparent',
@@ -22,11 +24,15 @@ export const surfacesCustomizations: Components<Theme> = {
           borderBottom: 'none',
         },
         '&:first-of-type': {
+          // @ts-ignore
           borderTopLeftRadius: (theme.vars || theme).shape.borderRadius,
+          // @ts-ignore
           borderTopRightRadius: (theme.vars || theme).shape.borderRadius,
         },
         '&:last-of-type': {
+          // @ts-ignore
           borderBottomLeftRadius: (theme.vars || theme).shape.borderRadius,
+          // @ts-ignore
           borderBottomRightRadius: (theme.vars || theme).shape.borderRadius,
         },
       }),
@@ -63,8 +69,8 @@ export const surfacesCustomizations: Components<Theme> = {
           gap: 16,
           transition: 'all 100ms ease',
           backgroundColor: gray[50],
-          borderRadius: (theme.vars || theme).shape.borderRadius,
-          border: `1px solid ${(theme.vars || theme).palette.divider}`,
+          borderRadius: (theme).shape.borderRadius,
+          border: `1px solid ${(theme).palette.divider}`,
           boxShadow: 'none',
           ...theme.applyStyles('dark', {
             backgroundColor: gray[800],
@@ -75,7 +81,7 @@ export const surfacesCustomizations: Components<Theme> = {
                 variant: 'outlined',
               },
               style: {
-                border: `1px solid ${(theme.vars || theme).palette.divider}`,
+                border: `1px solid ${(theme).palette.divider}`,
                 boxShadow: 'none',
                 background: 'hsl(0, 0%, 100%)',
                 ...theme.applyStyles('dark', {

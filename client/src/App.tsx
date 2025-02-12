@@ -1,9 +1,9 @@
-import { Container, CssBaseline } from '@mui/material'
+import { CssBaseline } from '@mui/material'
 import AppTheme from './components/shared-theme/AppTheme'
 import AppAppBar from './components/common/AppAppBar'
-import Latest from './components/blog/components/Latest'
-import MainContent from './components/blog/components/MainContent'
-import Footer from './components/common/Footer'
+// import Latest from './components/blog/components/Latest'
+// import MainContent from './components/blog/components/MainContent'
+// import Footer from './components/common/Footer'
 import { WikiSummary } from './pages/WikiSummary'
 
 function App(props: { disableCustomTheme?: boolean }) {

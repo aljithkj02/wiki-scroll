@@ -11,7 +11,6 @@ import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded';
-import SitemarkIcon from '../blog/components/SitemarkIcon';
 import ColorModeIconDropdown from '../shared-theme/ColorModeIconDropdown';
 import { Logo } from '../../assets';
 import { Typography } from '@mui/material';
